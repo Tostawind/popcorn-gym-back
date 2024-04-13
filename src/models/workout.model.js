@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 const weightSchema = new Schema({
     kg: { type: Number, required: true },
     equipment: { type: String, required: true },
-    notes: { type: String, required: true }
+    notes: { type: String }
 });
 
 const exerciceSchema = new Schema({
@@ -24,4 +24,5 @@ const workoutSchema = new Schema({
     exercises: { type: [exerciceSchema], required: true }
 });
 
+// IMPORTANT: workout is the name of the collection
 module.exports = mongoose.model('workout', workoutSchema);

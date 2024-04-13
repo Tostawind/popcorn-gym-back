@@ -1,0 +1,117 @@
+###
+POST http://localhost:9000/api/workouts
+Content-Type: application/json
+
+{
+  "name": "Tirón",
+  "exercises": [
+    {
+      "id": "e0001",
+      "position": 1,
+      "name": "Remo en barra libre",
+      "sets": 3,
+      "reps": 10,
+      "rest": "2",
+      "weights": [
+          {
+          "kg": 60,
+          "equipment": "Peso libre",
+          "notes": "20kg barra + 10kg x 2"
+        },
+        {
+          "kg": 80,
+          "equipment": "Polea roja",
+          "notes": ""
+        }          
+      ],
+      "notes": "La barra de fuera pesa 20kgs pero está oxidada...",
+      "image": "https://cdn.shopify.com/s/files/1/0269/5551/3900/files/Barbell-Row_4beb1d94-bac9-4538-9578-2d9cf93ef008_600x600.png?v=1612138201"
+    },
+    {
+      "id": "e0002",
+      "position": 2,
+      "name": "Jalon pecho",
+      "sets": 2,
+      "reps": 8,
+      "rest": "1",
+      "weights": [
+          {
+          "kg": 60,
+          "equipment": "Peso libre",
+          "notes": "20kg barra + 10kg x 2"
+        },
+        {
+          "kg": 80,
+          "equipment": "Polea roja",
+          "notes": ""
+        }          
+      ],
+      "notes": "La barra de fuera pesa 20kgs pero está oxidada...",
+      "image": "https://cdn.shopify.com/s/files/1/0269/5551/3900/files/Barbell-Deadlift_600x600.png?v=1619977112"
+    }          
+  ]
+}
+
+###
+GET http://localhost:9000/api/workouts
+
+###
+GET http://localhost:9000/api/workouts/661a5a36a2a046edbd143172
+
+###
+PUT http://localhost:9000/api/workouts/661a5c5dd40c26bc14b9ba0b
+Content-Type: application/json
+
+{
+  "name": "Tiróncito!",
+  "exercises": [
+    {
+      "id": "e0001",
+      "position": 1,
+      "name": "Remo en barra libre",
+      "sets": 3,
+      "reps": 10,
+      "rest": "2",
+      "weights": [
+          {
+          "kg": 60,
+          "equipment": "Peso libre",
+          "notes": "20kg barra + 10kg x 2"
+        },
+        {
+          "kg": 80,
+          "equipment": "Polea roja",
+          "notes": ""
+        }          
+      ],
+      "notes": "La barra de fuera pesa 20kgs pero está oxidada...",
+      "image": "https://cdn.shopify.com/s/files/1/0269/5551/3900/files/Barbell-Row_4beb1d94-bac9-4538-9578-2d9cf93ef008_600x600.png?v=1612138201"
+    },
+    {
+      "id": "e0002",
+      "position": 2,
+      "name": "Jalon pecho",
+      "sets": 2,
+      "reps": 8,
+      "rest": "1",
+      "weights": [
+          {
+          "kg": 60,
+          "equipment": "Peso libre",
+          "notes": "20kg barra + 10kg x 2"
+        },
+        {
+          "kg": 80,
+          "equipment": "Polea roja",
+          "notes": ""
+        }          
+      ],
+      "notes": "La barra de fuera pesa 20kgs pero está oxidada...",
+      "image": "https://cdn.shopify.com/s/files/1/0269/5551/3900/files/Barbell-Deadlift_600x600.png?v=1619977112"
+    }          
+  ]
+}
+
+
+###
+DELETE http://localhost:9000/api/workouts/661a5c5dd40c26bc14b9ba0b
