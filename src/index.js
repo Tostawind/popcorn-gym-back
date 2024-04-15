@@ -6,7 +6,7 @@ const workoutsRoutes = require('./routes/workout.routes');
 
 /*_________________________________________________________*/
 const app = express();
-const port = process.env.PORT ||  9000;
+// const port = process.env.PORT ||  9000;
 
 /*_________________________________________________________*/
 /* __MIDDLEWARES__ */
@@ -34,4 +34,4 @@ mongoose
 
 
 /*_________________________________________________________*/
-app.listen(9000, () => console.log(`http://localhost:${port}`));
+// app.listen(9000, () => console.log(`http://localhost:${port}`));
