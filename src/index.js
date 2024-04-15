@@ -6,7 +6,7 @@ const workoutsRoutes = require('./routes/workout.routes');
 
 /*_________________________________________________________*/
 const app = express();
-const port = process.env.PORT ||  1234;
+const port = process.env.PORT ||  9000;
 
 /*_________________________________________________________*/
 /* __MIDDLEWARES__ */
